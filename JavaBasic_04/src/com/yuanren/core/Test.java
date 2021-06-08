@@ -17,7 +17,7 @@ public class Test {
 
         //
 
-        String   str="我是你们接触的第一个字符串";
+        String   str="我是你们接    触的第一个字符串";
         String str1 = getStr(str);
         System.out.println(str1);
 
