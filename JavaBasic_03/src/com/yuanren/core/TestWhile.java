@@ -37,11 +37,29 @@ public class TestWhile {
         if(min>number1){  //
             min=number1;
         }
+        //test3
+   /*     int   count=0; //用来统计偶数个数
         while(min<max){
             if(min%2==0){
+                count++;  //满足条件偶数自 + 一次   count=count+1;
                 System.out.println("偶数为："+min);
             }
             min++;
         }
+        System.out.println("偶数的个数："+count);*/
+
+        //test4
+        int   sum=0; //用来统计奇数和
+        while(min<max){
+            if(min%2==1){
+                sum+=min;  //满足条件偶数自 + 一次   sum=sum+min;
+                System.out.println("奇数为："+min);
+            }
+            min++;
+        }
+        System.out.println("奇数的sum："+sum);
+
+
+
     }
 }
