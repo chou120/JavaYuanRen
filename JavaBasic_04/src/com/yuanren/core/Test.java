@@ -10,12 +10,8 @@ public class Test {
         System.out.println("请输入一个数：");
         int  n=scanner.nextInt();
 
-
         int  su=sum(n,8);  //实际参数   调用者这一方调用的方法的括号里面的叫实际参数
         System.out.println("和是："+su);
-
-
-        //
 
         String   str="我是你们接    触的第一个字符串";
         String str1 = getStr(str);
@@ -23,17 +19,12 @@ public class Test {
 
     }
 
-
     public  static  String   getStr(String  string){  //字符串加工厂
 
         string=string+"老婆";
 
         return string;
     }
-
-
-
-
 
     public static int  sum(int  x,int y){  //   括号里面的叫形式参数
         //int   total=x+y+65;
