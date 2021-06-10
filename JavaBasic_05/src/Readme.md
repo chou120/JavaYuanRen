@@ -36,10 +36,10 @@ public static  String [] delete(String [] arr,int number){
     return null;
 }
 ```
-### 4. 编写一个方法不使用 * 完成两个数相乘
+### 4. 编写一个方法不使用 * 完成两个数相乘   6*8
 ```
 int multiply(int n1, int n2) {
-
+        
 }
 ```
 ### 5. 编写一个main方法用来测试上述两个方法，定义一个数组，内容 {13,26,-3,4,54,26,37,18,69,-10}，编写一个print方法，使用字符串拼接的方式，将数组内容数组输出为如下格式，每5个换行
@@ -56,7 +56,13 @@ int multiply(int n1, int n2) {
 * @param arr
 */
 static void sort(int arr[], boolean isAsc) {
-
+    
+    if(isAsc){
+        //升序
+    }else{
+        //降序
+    }
+    
 }
 ```
 
