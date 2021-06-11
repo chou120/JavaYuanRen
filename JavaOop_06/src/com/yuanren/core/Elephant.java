@@ -2,12 +2,12 @@ package com.yuanren.core;
 
 public class Elephant {
 
-    //封装:将相同类型的模板进行提取到一个类中，私有化属性公有化方法
-
+    //封装:相同类型的属性和方法的集合(私有化属性公有化方法)
     double height = 3.5;
     double weight = 2000;
     String name = "小三";
     char sex = '雄';
+
     private int age = 5;  //全局变量
 
     //提供一个共有的方法  对其进行赋值
