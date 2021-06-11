@@ -41,7 +41,6 @@ public class TestObjectArray {
             System.out.println(persons[i].getName());
         }*/
 
-
         Scanner scanner = new Scanner(System.in);
 
        /*
@@ -87,7 +86,6 @@ public class TestObjectArray {
             person1.setPassword(scanner.next());
 
             peoples[i]=person1;
-
         }
 
         for (int i = 0; i < peoples.length; i++) {
