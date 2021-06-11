@@ -6,6 +6,7 @@ public class Test5 {
         int [] arr={13,26,-3,4,54,26,37,18,69,-10};
 
         System.out.println(print(arr));
+
     }
 
     public static String print(int[] arr) {
