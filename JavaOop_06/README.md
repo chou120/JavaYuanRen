@@ -9,7 +9,7 @@
         1.创建一个工具类DButil,里面成员只有一个长度为5的对象数组,初始值默认为null 
         2.创建一个功能集合类MethodFucntion,里面方法有
 public void addUser(User user){
-
+            
 }
 /**
  * @param name 用户名
