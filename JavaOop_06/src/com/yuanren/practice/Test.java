@@ -27,13 +27,14 @@ public class Test {
         user.setSex('男');
 
         methodFunction.addUser(user);
+       // methodFunction.print();
+
+       /* String str="张三";
+        System.out.println(str.equals("1"));*/
+
+       // methodFunction.deleteUser("张三2");
+        methodFunction.updateUser("9527","456","科技园","415678");
         methodFunction.print();
-
-        String str="张三";
-        System.out.println(str.equals("1"));
-
-      //  System.out.println(user.getName().equals(str));
-
 
 
     }

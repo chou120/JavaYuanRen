@@ -28,8 +28,8 @@ public class MethodFunction {
                 users[i]=null;
                 for (int j = i; j < users.length-1; j++) {
                     users[j]=users[j+1];
-                    if(j==users.length-1){
-                        users[j]=null;
+                    if(j==users.length-2){
+                        users[j+1]=null;
                         break;
                     }
                 }
@@ -38,7 +38,7 @@ public class MethodFunction {
         }
         int index = dButil.getIndex();
         //删除之后  index减少一次
-        dButil.setIndex(index--);
+        dButil.setIndex(--index);
     }
     /**
      * @param idCard 用户编号
