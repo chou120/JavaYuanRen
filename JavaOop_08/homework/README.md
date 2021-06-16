@@ -117,7 +117,7 @@ public class StaticDemo {
   int num1 = 3;
   static int num2 = 5;
    //  new  StaticDemo().num2
-  StaticDemo(int num1, int num2) {
+  public StaticDemo(int num1, int num2) {
     if (num2 < 30) {
       this.num2 = num2;
     }
