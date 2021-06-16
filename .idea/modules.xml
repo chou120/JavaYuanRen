@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaBasic_03/JavaBasic_03.iml" filepath="$PROJECT_DIR$/JavaBasic_03/JavaBasic_03.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaBasic_04/JavaBasic_04.iml" filepath="$PROJECT_DIR$/JavaBasic_04/JavaBasic_04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBasic_05/JavaBasic_05.iml" filepath="$PROJECT_DIR$/JavaBasic_05/JavaBasic_05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaOop_06/JavaOop_06.iml" filepath="$PROJECT_DIR$/JavaOop_06/JavaOop_06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaOop_07/JavaOop_07.iml" filepath="$PROJECT_DIR$/JavaOop_07/JavaOop_07.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaYuanRen.iml" filepath="$PROJECT_DIR$/.idea/JavaYuanRen.iml" />
     </modules>
   </component>

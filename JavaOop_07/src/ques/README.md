@@ -15,10 +15,6 @@
  调用`fridge.store()` 传入狮子对象，编译运行代码。
  程序最后将会输出`冰箱已经满了`
 
-
-
-
-
 ```java
 ### 1.
 创建一个狗类
@@ -34,7 +30,7 @@
 -- printInfo
 向控制台输出 getInfo 获取的内容
 
--- playWith(club.banyuan.cat.Cat)
+-- playWith(homework.Cat cat)
 向控制台输出 狗品种和猫品种一起玩， 例如哈士奇和波斯猫一起玩
 
 ### 2.
@@ -51,7 +47,7 @@
 -- print
 向控制台输出 getInfo中的内容
 
--- playWith(Dog)
+-- playWith(Dog dog)
 向控制台输出 猫类getInfo+狗类的getInfo 一起玩，例如 白色波斯猫和傻哈士奇一起玩， 黑色英短和普通的柯基一起玩
 
 ### 3.
@@ -67,13 +63,6 @@
 波斯  白色
 英短  黑色
 ```
-
-### 4.
-将狗类放置到包路径club.banyuan.dog 路径下，狗类的全限定类名为 club.banyuan.dog.Dog
-
-将猫类放置到包路径club.banyuan.cat 路径下，猫类的全限定类名为 club.banyuan.cat.club.banyuan.cat.Cat
-
-将测试类放置到包路径club.banyuan.main 路径下，测试类的全限定类名为 club.banyuan.main.club.banyuan.main.Main
 
 
 ```

@@ -39,6 +39,8 @@ public class Main {
     printFridgeInfo(f1);
     f1.printFridgeInfo();
     f1.remove();
+    f1.printFridgeInfo();
+
 
     Fridge f2 = createFridge(550);
     f2.store(e2);

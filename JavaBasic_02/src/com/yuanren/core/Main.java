@@ -1,4 +1,4 @@
-package com.yuanren.core;
+package com.yuanren.Core;
 
 import java.util.Scanner;
 

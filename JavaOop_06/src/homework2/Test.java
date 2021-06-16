@@ -1,4 +1,4 @@
-package com.yuanren.homework;
+package homework2;
 
 public class Test {
 

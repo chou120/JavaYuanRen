@@ -6,16 +6,27 @@ public class Fridge {
   private Elephant elephant;
   private Lion lion;
 
-
   //TODO 完成 移除方法
   Elephant remove(){
-  //TODO
-    return null;
-
+    Elephant   e=elephant;
+    this.elephant=null;
+    return e;
   }
 
-  public void store(Lion lion){
-    //TODO
+  public void store(Lion lion){   //  public  void   setLion(Lion  lion){  this.lion=lion  }
+    if(elephant == null && this.lion == null){
+      this.lion = lion;
+    }else {
+      System.out.println("冰箱已经满了！");
+    }
+  }
+
+  public void store(Elephant elephant) {
+    if(lion == null && this.elephant == null){
+      this.elephant = elephant;
+    }else {
+      System.out.println("冰箱已经满了！");
+    }
   }
 
   void printFridgeInfo() {
@@ -44,13 +55,7 @@ public class Fridge {
     this.elephant = elephant;
   }
 
-  public void store(Elephant elephant) {
-    if(lion == null && this.elephant == null){
-      this.elephant = elephant;
-    }else {
-      System.out.println("冰箱已经满了！");
-    }
-  }
+
 
 
 }
