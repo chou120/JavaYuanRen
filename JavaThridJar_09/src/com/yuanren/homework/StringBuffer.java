@@ -52,7 +52,7 @@ public class StringBuffer {
      清除之前的而输入内容
      */
     public void clear(){
-        this.ch=null;
+        this.ch=new char[0];
     }
 
     /**
