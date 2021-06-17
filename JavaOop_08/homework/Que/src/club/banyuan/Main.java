@@ -9,5 +9,7 @@ public class Main {
     Person wangwu = new Person("王五");
     Person zhaoliu = new Person("赵六", 20);
 
+    System.out.println(zhaoliu.toString());
+
   }
 }
