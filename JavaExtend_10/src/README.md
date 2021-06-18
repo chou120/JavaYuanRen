@@ -227,7 +227,7 @@ class Y extends X {
     }
  
     int methodOfY()    {
-        return m-- + --m;
+        return m-- + --m;   //1111 1109
     }
 }
  
@@ -257,7 +257,8 @@ class B extends A {
 
 public class MainClass {
 	public static void main(String[] args) {
-		new B().B();
+		B b=new B();
+		b.B()
 	}
 }
 ```
@@ -278,21 +279,13 @@ class B extends A {
 public class MainClass {
 	public static void main(String[] args) {
 		A a = new A();
-
 		B b = new B(a);
-
 		System.out.println(a.i);
-
 		System.out.println(b.i);
-
 		System.out.println(b.a.i);
-
 		b.a.i = 2121;
-
 		System.out.println("--------");
-
 		System.out.println(a.i);
-
 		System.out.println(b.i);
 	}
 }
@@ -637,7 +630,7 @@ public class MainClass {
 #### 25.
 ```
 class ClassOne {
-     static int i, j = 191919;
+     static int i,j = 191919;
  
      {
          --i;
@@ -781,15 +774,15 @@ class ClassOne {
   int j = 222;
 
   {
-    i = i++ - ++j;
+    i = i++ - ++j; //111 - 223   = -112
   }
 }
 
 class ClassTwo extends ClassOne {
 
   {
-    i = -113;
-    j = i-- + --j;
+    i = -113;    // -113
+    j = i-- + --j;  // -113  + 222 
   }
 }
 
@@ -797,8 +790,8 @@ class Main {
 
   public static void main(String args[]) {
     ClassTwo clsTwo = new ClassTwo();
-    System.out.println(clsTwo.i);
-    System.out.println(clsTwo.j);
+    System.out.println(clsTwo.i);  //-114
+    System.out.println(clsTwo.j);  //109
   }
 }
 ```
