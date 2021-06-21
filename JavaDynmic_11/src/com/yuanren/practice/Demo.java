@@ -8,14 +8,13 @@ import com.yuanren.practice.util.DataUtil;
 import java.util.Scanner;
 
 public class Demo {
-
     public static void main(String[] args) {
-
         System.out.println("---------------欢迎进入中国商城管理系统--------------");
         /**
          * 商家
          * 产品
          */
+
         Scanner scanner = new Scanner(System.in);
         while(true){
             System.out.println("请输入要操作的数字:");
@@ -43,7 +42,6 @@ public class Demo {
                             System.out.println("您输入的账户或者密码不正确 请重新输入....");
                         }
                     }
-
                     break;
                 case 2:
 

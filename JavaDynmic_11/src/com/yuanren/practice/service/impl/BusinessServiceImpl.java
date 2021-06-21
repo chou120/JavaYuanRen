@@ -1,5 +1,7 @@
 package com.yuanren.practice.service.impl;
 
+import com.yuanren.intefaceDemo.Person;
+import com.yuanren.intefaceDemo.PersonImpl;
 import com.yuanren.practice.pojo.Business;
 import com.yuanren.practice.service.BusinessService;
 import com.yuanren.practice.util.DataUtil;
@@ -7,8 +9,11 @@ import com.yuanren.practice.util.DataUtil;
 public class BusinessServiceImpl   extends BusinessService {
     Business[] businesses = DataUtil.businesses;
 
+    //private Person person =new PersonImpl();  //接口多态
+
     @Override
     public boolean login(String name, String password) {
+       // person.log();
 
         for (int i = 0; i < businesses.length; i++) {
             if(name.equals(businesses[i].getName()) && password.equals(businesses[i].getPassword())){
@@ -17,18 +22,15 @@ public class BusinessServiceImpl   extends BusinessService {
         }
         return false;
     }
-
     @Override
     public void register(Business business) {
         DataUtil.changeBusinessesArrayLength();
         Business[] businesses = DataUtil.businesses;
         businesses[businesses.length-1]=business;
-
     }
 
     @Override
     public void deleteBusiness(String IDCard) {
-
         for (int i = 0; i < businesses.length; i++) {
             if(IDCard.equals(businesses[i].getIDCard())){
                     businesses[i]=null;
