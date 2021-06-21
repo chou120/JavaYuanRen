@@ -20,12 +20,25 @@ public class Outer {
 }
 class Test {
     public static void main(String[] args) {
-        Outer.Inner inner = new Outer().getInner(new Weapon() {
+     Weapon  weapon=   new Weapon() {
             @Override
             public void attack() {
-                System.out.println("哈撒给");
+                System.out.println("----");
+            }
+        };
+        Outer.Inner inner = new Outer().getInner(weapon);
+        inner.add();
+
+
+        new  Outer().getInner(new Weapon() {
+            @Override
+            public void attack() {
+                System.out.println("----");
             }
         });
-        inner.add();
+
+
+
+
     }
 }
