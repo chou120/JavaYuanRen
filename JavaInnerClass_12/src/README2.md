@@ -200,27 +200,21 @@ public class MainClass {
 #### 10.
 ```
 interface X {
-    char c = 'A';
-     
+    char c = 'A';   
     char methodX();
-}
- 
+} 
 class Y implements X {
     {
         System.out.println(c);
-    }
-     
+    } 
     public char methodX() {
-        char c = this.c;
-         
+        char c = this.c;       
         return ++c;
     }
-}
- 
+} 
 public class MainClass {
     public static void main(String[] args) {
-        Y y = new Y();
-         
+        Y y = new Y();       
         System.out.println(y.methodX());
          
         System.out.println(y.c);
@@ -269,13 +263,11 @@ public class MainClass {
 interface X {
     void method();
 }
- 
 class Y {
     public void method() {
         System.out.println("CLASS Y");
     }
 }
- 
 class Z extends Y implements X {
      
 }
@@ -312,7 +304,7 @@ class D implements A, B, C {
         return i;
     }
     public int methodC(){
-        i = ++i - --i;     
+        i = ++i - --i;     // 0 - -1  =1
         return i;
     }
 }
@@ -322,7 +314,7 @@ public class MainClass{
         System.out.println(d.i);
         System.out.println(d.methodA());
         System.out.println(d.methodB());
-        System.out.println(d.methodC());
+        System.out.println(d.methodC()); //1
     }
 }
 ```
