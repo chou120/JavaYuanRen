@@ -24,9 +24,7 @@ public class Util {
         }finally {
             a=1237889;
         }
-
         System.out.println("哈哈啥"+a);
-
 
         //时间api
         Date date = new Date();  //获取的是系统时间
@@ -37,5 +35,4 @@ public class Util {
 
 
     }
-
 }
