@@ -61,6 +61,30 @@ public class Test1 {
 
 
 
+       /* 键盘录入一个字符串，统计该字符串中大写字母字符，小写字母字符，数字字符出现的次数,其他字符出现的次数。
+        例如键盘录入：ABCDEabcd123456!@#$%^
+                输出：ABCDEabcd123456!@#$%^中大写字母有:5个,小写字母有:4个,数字字符:6个,其他字符:6个
+
+
+        */
+
+        String  str3="ABCDEabcd123456!@#$%^";
+        int  big=0;
+        int  small=0;
+        int  numberChar=0;
+        int  other=0;
+        char[] chars1 = str3.toCharArray();
+        for (char c : chars1) {
+            if(c>=65 && c<=90){
+                big++;
+            } else  if(c>=97 &&c<=122){
+                small++;
+            } else  if(Character.isDigit(c)){
+                numberChar++;
+            }else{
+                other++;
+            }
+        }
     }
 
 

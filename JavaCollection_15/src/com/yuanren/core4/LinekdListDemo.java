@@ -21,6 +21,7 @@ public class LinekdListDemo {
         System.out.println(linkedList+":"+poll);
 
         linkedList.push(12321);
+        Integer pop = linkedList.pop(); //出栈
 
         System.out.println(linkedList);
 

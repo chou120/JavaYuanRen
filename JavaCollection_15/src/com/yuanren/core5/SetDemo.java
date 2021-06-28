@@ -1,6 +1,7 @@
 package com.yuanren.core5;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Objects;
 import java.util.Set;
 
@@ -25,7 +26,11 @@ public class SetDemo {
 
         System.out.println(set);
 
+        for (User  us: set) {
+            System.out.println(us.toString());
+        }
 
+        Iterator<User> iterator = set.iterator();
 
     }
 }

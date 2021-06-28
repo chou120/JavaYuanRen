@@ -37,6 +37,23 @@ public class TreeSetDemo {
 
         System.out.println(treeSet);
 
+        /**
+         *
+         * Comparable：
+             * 	它可以让一个对象自身具备比较功能。哪个对象需要具备比较功能，
+             * 	这个对象所属的类就需要实现Comparable接口，实现其中的compareTo方法。
+         * Comparator：
+             它是单独的比较器，可以把这个接口的实现类对象单独传递给TreeSet集合，
+             那么这时集合中的元素就会按照当前指定的这个比较器进行比较。开发者如果需要使用比较器的时候，
+             需要定义类实现Comparator接口，同时实现其中的compare方法。
+         *
+         *      如果TreeSet集合中的元素所属的类实现类Comparable接口，同时这个集合对象中也传递了比较器对象，那么在比较时会使用的是比较器；
+         *
+         *      在使用TreeSet集合保存数据时，如果要保存的数据不能实现Comparable接口，或者已经实现了Comparable接口，
+         *      但是比较方法不符合使用要求，此时就应该使用比较器；
+         *
+         */
+
 
     }
 }
