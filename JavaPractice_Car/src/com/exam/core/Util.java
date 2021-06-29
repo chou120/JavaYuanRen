@@ -120,7 +120,6 @@ public class Util {
                 break;
         }
 
-
     }
     //显示试题的方法
     private static void showExam(Student  student) {
