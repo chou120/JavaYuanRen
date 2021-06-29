@@ -21,9 +21,7 @@ public class FileDemo {
 
         System.out.println( file.renameTo(new File("hahah.png")));*/
 
-
         File file = new File("D:\\JavaYuanRen\\JavaYuanRen");
-
         /*if(!file.exists()){
             file.mkdir();
         }*/
@@ -57,5 +55,6 @@ public class FileDemo {
         for (File file1 : files) {
             System.out.println(file1);
         }
+
     }
 }
