@@ -81,17 +81,14 @@ public class Team {
     }
   }
 
-
   public void replace(List<Player> players) {
     List<Player> all = new ArrayList<>(starting);  //将首发添加到新的集合中去
     all.addAll(substitution); // 将替补也添加到新的集合中去
-
     starting.clear(); //清空 首发 集合
     if (players.size() > 5) { //如果替代的集合人数players数量超过5
       throw new RuntimeException("人数不合法");
     }
     starting.addAll(players);  //如果添加的数量没有超过五个 就将需要添加的数据
-
     List<String> positions = new ArrayList<>();
     for (Player player : starting) {
       if (positions.contains(player.getPosition())) {
@@ -99,7 +96,6 @@ public class Team {
       }
       positions.add(player.getPosition());
     }
-
     Iterator<Player> iterator = all.iterator();
     while (iterator.hasNext()) {
       Player next = iterator.next();
@@ -109,7 +105,6 @@ public class Team {
         iterator.remove();
       }
     }
-
     if (starting.size() < 5) {
       throw new RuntimeException("人数不够了");
     }
