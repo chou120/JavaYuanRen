@@ -39,19 +39,12 @@ public class XmlDemo2 {
                 Node node=(Node)element;
                 System.out.println(node.getName()+"节点的文本内容:"+node.getText());
             }*/
-
             List note = rootElement.elements("note");
             for (Object o : note) {
                 Element  node=(Element) o;
                 Element from = node.element("from");
-
                 System.out.println(from.getName()+",值:"+from.getText());
-
             }
-
-
-
-
         } catch (DocumentException e) {
             e.printStackTrace();
         }
