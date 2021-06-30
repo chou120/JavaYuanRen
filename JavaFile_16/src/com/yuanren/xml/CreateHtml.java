@@ -11,7 +11,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class CreateHtml {
-
     public static void main(String[] args) {
         File file = new File("beautyGirl.html");
         if (!file.exists()) {
@@ -41,10 +40,9 @@ public class CreateHtml {
         tr.addElement("td").setText("22");
         tr.addElement("td").setText("栖霞区");
         tr.addElement("td").setText("12345678901");
-
         HTMLWriter  htmlWriter= null;
-        try {
 
+        try {
             htmlWriter = new HTMLWriter(new FileOutputStream(file));
             htmlWriter.write(document);
 
