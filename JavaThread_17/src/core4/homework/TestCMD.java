@@ -30,7 +30,6 @@ public class TestCMD {
         }
         try {
            new TestCMD().choose(str);
-
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -1,5 +1,7 @@
 package core2;
 
+import com.yuanren.core.MyThread;
+
 public class TestMyThread2 {
 
     public static void main(String[] args) {
