@@ -61,7 +61,6 @@ public class LockDemo {
             } else {
                 System.out.println(thread.getName() + "没有获取到锁");
             }
-
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
